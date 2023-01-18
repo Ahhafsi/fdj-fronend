@@ -1,0 +1,10 @@
+<mat-form-field class="selector-class">
+  <input
+    type="text"
+    matInput
+    placeholder="search by league"
+    #autocomplete
+    (keyup)="search(autocomplete.value)"
+  />
+  <mat-icon matPrefix>search</mat-icon>
+</mat-form-field>

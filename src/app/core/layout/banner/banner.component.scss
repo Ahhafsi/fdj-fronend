@@ -1,0 +1,22 @@
+.banner-class {
+  display: flex;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-banner-class {
+  @extend .center-content;
+}
+
+.central-banner-class {
+  @extend .center-content;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.right-banner-class {
+  @extend .center-content;
+}

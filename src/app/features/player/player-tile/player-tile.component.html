@@ -1,0 +1,24 @@
+<img src="{{ player.thumbnail }}" />
+<div class="player-detail">
+  <h4>Name:</h4>
+  <p>
+    {{ player.name }}
+  </p>
+
+  <h4>Position:</h4>
+  <p>
+    {{ player.position }}
+  </p>
+
+  <h4>Date of birth:</h4>
+  <p>
+    {{ player.born | date : "yyyy-MM-dd" }}
+  </p>
+
+  <h4>Price:</h4>
+  <p>
+    {{
+      player.signin.amount | currency : player.signin.currency : "symbol-narrow"
+    }}
+  </p>
+</div>

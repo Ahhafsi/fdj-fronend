@@ -1,0 +1,11 @@
+<mat-toolbar class="banner-class">
+  <div class="left-banner-class" *ngIf="leftTemplate">
+    <ng-container *ngTemplateOutlet="leftTemplate"></ng-container>
+  </div>
+  <div class="central-banner-class" *ngIf="centralTemplate">
+    <ng-container *ngTemplateOutlet="centralTemplate"></ng-container>
+  </div>
+  <div class="right-banner-class" *ngIf="rightTemplate">
+    <ng-container *ngTemplateOutlet="rightTemplate"></ng-container>
+  </div>
+</mat-toolbar>
